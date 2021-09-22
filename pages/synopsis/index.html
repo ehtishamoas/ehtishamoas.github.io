@@ -6,12 +6,19 @@
   </head>
   <body>
 
-    <!-- Back to HOMEPAGE box-->
-    <a href="../../index.html">
-      <div class="back_box">
-        <p> BACK TO HOMEPAGE </p>
-      </div>
-    </a>
+    <!--Menu-->
+    <div id="myMenu" class="menu"> <!-- Side menu controlled by clicking menu_box div-->
+      <ul> <!-- list the links in the side menu-->
+        <li><a class="menuLinks" href="../../index.html">Home</a>
+        <li><a class="menuLinks" href="../film/index.html">Film</a>
+ 	      <li><a class="menuLinks" href="index.html">Synopsis</a>
+ 	      <li><a class="menuLinks" href="../cast/index.html">Cast</a>
+      </ul>
+    </div>
+
+	  <div id="menu_box" class="menu_div"> <!-- Setting both id and class for Javascript and CSS -->
+      <p>&#9776; MENU</p> <!-- It will display  a hamburger icon before menu-->
+	  </div>
 
     <!-- Image -->
     <img class="img" src="images/stickpeople.png" alt="stick people" width = 1000px height = 500px;>
@@ -24,5 +31,6 @@
       <p>Ehtisham visits a smartphone shop in a foreign country in hope to buy a used smartphone. Jun the shopkeeper recommends him a smartphone fit for him and Ehtisham agrees to buy it. However, Ehtisham only has money in his own country's currency. Meanwhile, Abraiz (another person in the shop) overhears the conversation and offers to take money from Ehtisham in his currency and to give  Jun the equivalent amount in the required currency. Then, another small problem arises when Ehtisham falls short of small amount of money. Seeing the helpfulness of Abraiz motivates Jun to show kindness at his part as well. So, he takes a banana from Ehtisham in place of the money. Jun did not just give him the phone without taking money to ensure that Ehtisham does not feel bad or indebted. Ehtisham takes the phone and leaves the shop while expressing his gratitude to both Abraiz and Jun. This film shows how we can solve our day-to-day problems by being kind and helpful.</p>
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>

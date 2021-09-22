@@ -6,12 +6,19 @@
   </head>
   <body>
 
-    <!-- Back to HOMEPAGE box-->
-    <a href="../../index.html">
-      <div class="back_box">
-        <p> BACK TO HOMEPAGE </p>
-      </div>
-    </a>
+    <!--Menu-->
+    <div id="myMenu" class="menu"> <!-- Side menu controlled by clicking menu_box div-->
+      <ul> <!-- list the links in the side menu-->
+        <li><a class="menuLinks" href="../../index.html">Home</a>
+        <li><a class="menuLinks" href="index.html">Film</a>
+ 	      <li><a class="menuLinks" href="../synopsis/index.html">Synopsis</a>
+ 	      <li><a class="menuLinks" href="../cast/index.html">Cast</a>
+      </ul>
+    </div>
+
+	  <div id="menu_box" class="menu_div"> <!-- Setting both id and class for Javascript and CSS -->
+      <p>&#9776; MENU</p> <!-- It will display  a hamburger icon before menu-->
+	  </div
 
     <!-- Embedded Video -->
     <video class="film" src="video/MFF.mp4" controls>
@@ -35,5 +42,6 @@
       <li><p><span class = "bold">Duration:</span> 3 minutes 16 seconds</p>
 		</ul>
 
+    <script src="script.js"></script>
   </body>
 </html>

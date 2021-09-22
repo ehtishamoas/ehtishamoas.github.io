@@ -23,8 +23,8 @@ body {
   border-radius: 12px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%); /* centralize the box */
+  top: 55%;
+  transform: translate(-50%,-55%); /* centralize the box */
   text-align: center; /* horizontally align text in box */
   line-height: 10px; /* vertically align text in box */
   width: 200px;
@@ -76,17 +76,19 @@ ul {
   background-color: #142270;
   margin-left: 20px;
   border-radius: 15px;
-  position: relative;
-  line-height: 50px;
+  bottom: 20px;
+  position: fixed;
+  line-height: 15px;
+  top: 20px;
   height: 50px;
   width: 130px;
-  bottom: 100px;
-  font-weight: bold;
   text-align: center;
+  font-weight: bold;
   font-size: 18px;
   color: #b4beed;
   cursor: pointer;
 }
+
 .menu_div:hover {
   background-color: #6775b5;
 }

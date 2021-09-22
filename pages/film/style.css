@@ -46,26 +46,68 @@ body {
   top: 800px;
   left: 700px;
   font-family: "Georgia",sans-serif;
+  color: #000000;
 }
 
 .bold{ /*To bold the details' headings*/
   font-weight: bold;
 }
 
-.back_box{
-  border: black 2px solid;
-  border-radius: 5px;
-  margin-left: 20px;
-  position: absolute;
-  top: 20px;
-  text-align: center;
-  line-height: 8px;
-  font-size: 12px;
-  color: #142270;
-  width: 150px;
-  height: 30px;
-  text-decoration: none;
+.menu {
+  height: 100%; /* takes complete verticle screen */
+  width: 0; /* changes with JavaScript when menu_box is clicked*/
+  position: fixed; /* keeps the menu in place */
+  top: 0;
+  background-color: #030f54;
+  overflow-x: hidden; /* disable horizontal scroll */
+  padding-top: 100px; /* places content 100px from the top */
+  transition: 0.5s; /* transition effect to slide in the menu instead of just pop it*/
 }
-.back_box:hover{
-  background-color: #9090d4;
+
+/*links in the Menu*/
+.menuLinks {
+  margin-left: 20px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b4beed;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+ul {
+  color: #b4beed;
+  font-size: 20px;
+  list-style: square; /* changes bullets from discs to squares */
+}
+
+.menuLinks:hover {
+  color: #6561d4;
+}
+
+/* The box used to open/close the menu */
+.menu_div {
+  background-color: #142270;
+  margin-left: 20px;
+  border-radius: 15px;
+  bottom: 20px;
+  position: fixed;
+  line-height: 15px;
+  top: 20px;
+  height: 50px;
+  width: 130px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #b4beed;
+  cursor: pointer;
+}
+
+.menu_div:hover {
+  background-color: #6775b5;
+}
+
+#menu_box {
+  transition: margin-left .5s; /* transition effect for the menu_box movement*/
 }

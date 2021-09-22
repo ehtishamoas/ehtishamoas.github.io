@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cast Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!-- Webpage heading -->
+    <h1 class="heading">MOVIE CAST</h1>
+
+    <!--Menu-->
+    <div id="myMenu" class="menu"> <!-- Side menu controlled by clicking menu_box div-->
+      <ul> <!-- list the links in the side menu-->
+        <li><a class="menuLinks" href="../../index.html">Home</a>
+        <li><a class="menuLinks" href="../film/index.html">Film</a>
+ 	      <li><a class="menuLinks" href="../synopsis/index.html">Synopsis</a>
+ 	      <li><a class="menuLinks" href="index.html">Cast</a>
+      </ul>
+    </div>
+
+	  <div id="menu_box" class="menu_div"> <!-- Setting both id and class for Javascript and CSS -->
+      <p>&#9776; MENU</p> <!-- It will display  a hamburger icon before menu-->
+	  </div>
+
+    <!-- Images of all three actors (width and height is controlled in css file)-->
+    <img class="jun_img" src="images/jun.jpg" alt="Jun">
+    <img class="abraiz_img" src="images/abraiz.jpg" alt="abraiz">
+    <img class="ehtisham_img" src="images/ehtisham.jpg" alt="ehtisham">
+
+    <!-- Names and Roles to come below images-->
+    <p class="jun">Jun Ming<br> <span class="role">The Seller</span></p>
+    <p class="abraiz">Abraiz Azhar<br> <span class="role">The Helper</span></p>
+    <p class="ehtisham">Ehtisham Ul Haq<br> <span class="role">The Buyer</span></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

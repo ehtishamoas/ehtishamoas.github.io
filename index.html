@@ -2,20 +2,31 @@
 <html>
   <head>
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css"> <!--- Links the css file --->
+    <link rel="stylesheet" href="style.css"> <!-- Links the css file -->
   </head>
   <body>
-    <div class= 'bg-image'>
+    <img class= 'heart' src="images/heart.png" alt="heart of hands">
 
     <h1 class = 'title' >Lending A Hand</h1>
 
-    <div class = 'video-box'>
-      <a id="vid-link" href="https://drive.google.com/file/d/1hKHl_GhvZxTcukwGM6x5ms-EgBEHbtcA/view?usp=sharing">Video</a>
+    <a href="pages/film/index.html"> <!-- setting the whole box as a link -->
+      <div class = 'watch_box'>
+        <p>WATCH NOW</p>
+      </div>
+    </a>
+
+    <div id="myMenu" class="menu"> <!-- Side menu controlled by clicking menu_box div-->
+      <ul> <!-- list the links in the side menu-->
+        <li><a class="menuLinks" href="pages/film/index.html">Film</a>
+ 	      <li><a class="menuLinks" href="pages/synopsis/index.html">Synopsis</a>
+ 	      <li><a class="menuLinks" href="pages/cast/index.html">Cast</a>
+      </ul>
     </div>
 
-    <div class = 'synopsis-box'>
-      <a id="syn-link" href="pages/synopsis.html">Synopsis</a>
-    </div>
+	  <div id="menu_box" class="menu_div"> <!-- Setting both id and class for Javascript and CSS -->
+      <p>&#9776; MENU</p> <!-- It will display  a hamburger icon before menu-->
+	  </div>
 
+    <script src="script.js"></script>
   </body>
 </html>

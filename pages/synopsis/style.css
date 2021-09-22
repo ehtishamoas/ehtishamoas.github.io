@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(to bottom, #B2B2EF, #FFFFFF);
+}
+.img {
+  /*Center and vertically adjust the stickpeople image*/
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 30px;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  font-size: 70px;
+  color: #1B1948;
+}
+
+.syn {
+  margin: auto;
+  bottom: 50px;
+  padding: 50px; /* Put some distance between text and box border*/
+  padding-top: 10px; /*extra padding from top of the box*/
+  position: relative;
+  line-height: 50px; /*vertically adjust text in box*/
+  background-color: #FFFFFF; /*white color*/
+  font-size: 30px;
+  width: 1000px;
+  height: 650px;
+}
+.back_box{
+  border: black 2px solid;
+  border-radius: 5px;
+  margin-left: 20px;
+  position: fixed;
+  top: 20px;
+  text-align: center;
+  line-height: 8px;
+  font-size: 12px;
+  color: #142270;
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+}
+.back_box:hover{
+  background-color: #9090d4;
+}

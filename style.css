@@ -1,57 +1,96 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Georgia', sans-serif;
+  background-image: linear-gradient(to right, #B2B2EF, #FFFFFF);
 }
 
-.bg-image {
-  background-image: url("images/hands.png"),linear-gradient(to Bottom, #B2B2EF, #FFFFFF);
-  height: 1080px;
-  width: 1920px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
+.heart {
+  position: absolute; /* So that we can place the image at exactly where we want using positioning attributes */
+  height: 900px; /* fits on one page and looks good */
+  left: 450px;
 }
+
 .title {
   text-align: center;
-  position: relative;
-  top: 30%;
-  font-size: 70px;
+  position: relative; /* to easily centralize text and move it using 'top' */
+  top: 350px;
+  font-size: 50px;
   font-family: 'algerian', sans-serif;
-  color: #1118EC;
+  color: #142270;
 }
-.video-box {
+.watch_box {
+  border: black 2px solid;
   border-radius: 12px;
-  margin: auto;
-  position: relative;
-  top: 380px;
-  right: 150px;
-  text-align: center;
-  line-height: 50px;
-  background-image: radial-gradient(#5F70BE, #CACFE8);
-  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%); /* centralize the box */
+  text-align: center; /* horizontally align text in box */
+  line-height: 10px; /* vertically align text in box */
+  width: 200px;
   height: 50px;
+  font-size: 20px;
+  color: #142270;
+  text-decoration: none; /* remove underline from link */
 }
 
-.synopsis-box {
-  border-radius: 12px;
-  margin: auto;
-  position: relative;
-  top: 330px; /*Video Box's height is 50px, so this box is 50px below*/
-  left: 150px;
-  text-align: center;
-  line-height: 50px;
-  background-image: radial-gradient(#5F70BE, #CACFE8);
-  width: 150px;
-  height: 50px;
+.watch_box:hover{
+  background-color: #babaf7;
 }
 
-#vid-link {
-  text-decoration: none;
-  font-size: 30px;
-  color: #252198;
+.menu {
+  height: 100%; /* takes complete verticle screen */
+  width: 0; /* changes with JavaScript when menu_box is clicked*/
+  position: fixed; /* keeps the menu in place */
+  top: 0;
+  background-color: #030f54;
+  overflow-x: hidden; /* disable horizontal scroll */
+  padding-top: 100px; /* places content 100px from the top */
+  transition: 0.5s; /* transition effect to slide in the menu instead of just pop it*/
 }
-#syn-link{
+
+/*links in the Menu*/
+.menuLinks {
+  margin-left: 20px;
+  margin-top: 30px;
   text-decoration: none;
-  font-size: 30px;
-  color: #252198;
+  font-size: 25px;
+  color: #b4beed;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+ul {
+  color: #b4beed;
+  font-size: 20px;
+  list-style: square; /* changes bullets from discs to squares */
+}
+
+.menuLinks:hover {
+  color: #6561d4;
+}
+
+/* The box used to open/close the menu */
+.menu_div {
+  background-color: #142270;
+  margin-left: 20px;
+  border-radius: 15px;
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  width: 130px;
+  bottom: 100px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  color: #b4beed;
+  cursor: pointer;
+}
+.menu_div:hover {
+  background-color: #6775b5;
+}
+
+#menu_box {
+  transition: margin-left .5s; /* transition effect for the menu_box movement*/
 }
